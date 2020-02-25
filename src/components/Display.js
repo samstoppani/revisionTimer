@@ -4,7 +4,7 @@ export class Display extends Component {
     constructor() {
         super()
         this.state = {
-            time: 5000,    // 5000 for 5 seconds
+            time: 1500000,    // 5000 for 5 seconds
             breakTime: 300000,
             sessionTime: 1500000,
             stop: true,
