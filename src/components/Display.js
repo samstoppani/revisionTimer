@@ -222,10 +222,17 @@ export class Display extends Component {
     }  
     
     downBreak() {
+      var self = this;
       if (!this.state.stop) {
         this.resetTimer()
       }
-      var self = this;
+      setTimeout(function() {
+        if (self.state.breakTime < 0) {
+        self.setState({
+          breakTime: 0,
+          })
+        }
+      },10)
       this.setState( prevState => {
         return {
           breakTime: prevState.breakTime - 60000,
@@ -256,10 +263,18 @@ export class Display extends Component {
     }
 
     downSession() {
+      var self = this;
       if (!this.state.stop) {
         this.resetTimer()
       }
-      var self = this;
+      setTimeout(function() {
+        if (self.state.sessionTime < 0) {
+        self.setState({
+          sessionTime: 0,
+          time: 0
+          })
+        }
+      },10)
       this.setState( prevState => {
         return {
           sessionTime: prevState.sessionTime - 60000,
@@ -311,8 +326,8 @@ export class Display extends Component {
                 </div>
                 <div className="displayStyle">
                 {this.state.session ? 
-                  <div className="bearDisplay"><img style={{width: 200, height: 200}} src="study.gif" alt="study"/><h1>Revise</h1></div> : 
-                  <div className="bearDisplay"><h1>Chill</h1><img style={{width: 200, height: 200}} src="dancebear2.webp" alt="dance"/></div>}
+                  <div className="bearDisplay"><img style={{width: 300, height: 300}} src="study.gif" alt="study"/><h1>Revise</h1></div> : 
+                  <div className="bearDisplay"><h1>Chill</h1><img style={{width: 300, height: 300}} src="dancebear2.webp" alt="dance"/></div>}
                 </div>
                 <div className="timeChanger">
                   <h2 className="text">Break Length</h2>
@@ -347,4 +362,5 @@ export class Display extends Component {
 }
 
 export default Display
+
 
