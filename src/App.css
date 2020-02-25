@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+* {
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timerBarStyle1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px;
+    grid-gap: 20px;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.displayStyle {
+    display: grid;
+    justify-items: center;
+}
+
+.bearDisplay {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    text-align: center;
+    align-items: center;
+    color: rgba(239, 168, 61,1);
+    padding: 10px;
+    font-size: 30px;
+}
+
+.timeChanger {
+    display: grid;
+    grid-template-columns: minmax(180px, auto) minmax(100px, auto) minmax(180px, auto);
+    grid-template-rows: 10px 30px;
+    grid-gap: 20px;
+    padding: 30px 10px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    background-color:rgb(39, 57, 102);
+}
+
+.text {
+    background-color:rgb(39, 57, 102);
+    color: rgba(239, 168, 61, 1);
+}
+
+.upDown {
+    display: grid;
+    grid-template-columns: 20px 40px 20px;
+    grid-template-rows: 50px;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(39, 57, 102);
+    color: rgba(239, 168, 61, 1);
+}
+
+.upDownButton {
+    background-color: rgba(150, 150, 170, 1);
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 3px;
+}
+
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    background-color: rgba(150, 150, 170, 1);
+    color: white;;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.buttonStyle {
+    background-color: rgba(239, 168, 61, 1);
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+/* rgb(39, 57, 102) blue */
+/* rgba(239, 168, 61, 1) yellow */ 
+
+button:active  {
+    outline: none;
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline:0;
+}
+
+
+.timerStyle {
+    display: grid;
+    justify-items: center; 
+    align-items: center;
+    grid-template-rows: 50px;
+    padding: 40px;
+}
+
+.timerSessionStyle {
+    grid-template-rows: 50px;
+    border: 5px solid rgb(255, 100, 127);
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.timerBreakStyle {
+    grid-template-rows: 50px;
+    border: 5px solid rgb(160, 210, 110);
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.timerBarStyle2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px;
+    grid-gap: 80px;
+    padding: 20px 50px;
+    background-color: rgb(39, 57, 102);
+}
+
+.buttonStyle1 {
+    background-color: rgba(150, 150, 170, 1);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 15px 40px;
+}
+
+.buttonStyle2 {
+    background-color: rgba(150, 150, 170, 1);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 15px 40px;
+}
+
+.buttonStyle3 {
+    background-color: rgba(150, 150, 170, 1);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 15px 40px;
 }
