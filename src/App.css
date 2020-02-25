@@ -86,7 +86,7 @@ i {
 
 .buttonStyle {
     background-color: rgba(239, 168, 61, 1);
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 20px;
 }
 
@@ -108,7 +108,7 @@ button:focus {
     justify-items: center; 
     align-items: center;
     grid-template-rows: 50px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .timerSessionStyle {
@@ -141,7 +141,7 @@ button:focus {
 .buttonStyle1 {
     background-color: rgba(150, 150, 170, 1);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 20px;
     padding: 15px 40px;
 }
@@ -149,7 +149,7 @@ button:focus {
 .buttonStyle2 {
     background-color: rgba(150, 150, 170, 1);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 20px;
     padding: 15px 40px;
 }
@@ -157,7 +157,7 @@ button:focus {
 .buttonStyle3 {
     background-color: rgba(150, 150, 170, 1);
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 20px;
     padding: 15px 40px;
 }
