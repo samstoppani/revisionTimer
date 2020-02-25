@@ -27,7 +27,19 @@ h3 {
 
 .bearDisplay {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 200px 100px;
+    text-align: center;
+    align-items: center;
+    color: rgba(239, 168, 61,1);
+    padding: 10px;
+    font-size: 30px;
+    background-color: white;
+}
+
+
+.bearDisplay2 {
+    display: grid;
+    grid-template-columns: 100px 200px;
     text-align: center;
     align-items: center;
     color: rgba(239, 168, 61,1);
