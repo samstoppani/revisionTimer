@@ -344,12 +344,6 @@ export class Display extends Component {
                     <h3 id="sessionLength" className="text">25</h3>
                     <button className="upDownButton" onClick={this.upSession}><i className="up"></i></button>
                   </div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
                   <button className="buttonStyle1" onClick={this.startTimer}>Start</button>
                   <button className="buttonStyle2" onClick={this.stopTimer}>Stop</button>
                   <button className="buttonStyle3" onClick={this.resetTimer}>Reset</button>
