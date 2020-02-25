@@ -326,13 +326,13 @@ export class Display extends Component {
                 </div>
                 <div className="displayStyle">
                 {this.state.session ? 
-                  <div className="bearDisplay"><img style={{width: 200, height: 200, backgroundColor: "white"}} src="study.gif" alt="study"/><h2>Revise</h2></div> : 
-                  <div className="bearDisplay2"><h2>Chill</h2><img style={{width: 200, height: 200, backgroundColor: "white"}} src="chillbear.gif" alt="chill"/></div>}
+                  <div className="bearDisplay"><img style={{width: 200, height: 200, backgroundColor: "white"}} src="study.gif" alt="study"/><h3>Revise</h3></div> : 
+                  <div className="bearDisplay2"><h3>Chill</h3><img style={{width: 200, height: 200, backgroundColor: "white"}} src="chillbear.gif" alt="chill"/></div>}
                 </div>
                 <div className="timeChanger">
-                  <h3 className="text">Break</h3>
+                  <h2 className="text">Break</h2>
                   <div></div>
-                  <h3 className="text">Session</h3>
+                  <h2 className="text">Session</h2>
                   <div className="upDown">
                     <button className="upDownButton" onClick={this.downBreak}><i className="down"></i></button>
                     <h3 id="breakLength" className="text">05</h3>
