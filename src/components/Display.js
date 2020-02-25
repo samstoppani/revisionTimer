@@ -311,7 +311,7 @@ export class Display extends Component {
                 </div>
                 <div className="displayStyle">
                 {this.state.session ? 
-                  <div className="bearDisplay"><img style={{width: 300, height: 300}} src="study.gif" alt="study"/><h1>Revise</h1></div> : 
+                  <div className="bearDisplay"><img style={{width: 200, height: 200}} src="study.gif" alt="study"/><h1>Revise</h1></div> : 
                   <div className="bearDisplay"><h1>Chill</h1><img style={{width: 300, height: 300}} src="dancebear2.webp" alt="dance"/></div>}
                 </div>
                 <div className="timeChanger">
