@@ -1,5 +1,5 @@
 * {
-    background-color: white;
+    background-color: rgb(39, 57, 102);
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
     padding: 0;
@@ -16,6 +16,7 @@
 .displayStyle {
     display: grid;
     justify-items: center;
+    background-color: white;
 }
 
 .bearDisplay {
