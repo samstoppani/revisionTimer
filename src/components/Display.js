@@ -330,9 +330,9 @@ export class Display extends Component {
                   <div className="bearDisplay"><h3>Chill</h3><img style={{width: 200, height: 200}} src="dancebear2.webp" alt="dance"/></div>}
                 </div>
                 <div className="timeChanger">
-                  <h3 className="text">Break Length</h3>
+                  <h3 className="text">Break</h3>
                   <div></div>
-                  <h3 className="text">Session Length</h3>
+                  <h3 className="text">Session</h3>
                   <div className="upDown">
                     <button className="upDownButton" onClick={this.downBreak}><i className="down"></i></button>
                     <h3 id="breakLength" className="text">05</h3>
